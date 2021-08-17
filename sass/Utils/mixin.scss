@@ -1,0 +1,23 @@
+
+@mixin shadowbox {
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+  }
+
+
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content; 
+    }
+}
+
+@mixin aligncenter {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@mixin displayflexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
