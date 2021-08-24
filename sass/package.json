@@ -1,9 +1,12 @@
-url : https://github.com/Karimbappe/KarimFraboulet_3_17072021
-
-name :{
+"name":{
     "name": "KarimFraboulet_3_17072021",
     "description": "Projet OC 3",
     "authors": "Karim",
     "version": "1.0.0",
     "main": "pathToMain",
+    "dependencies": {}
+}
+
+"repository":{
+    "url": "https://github.com/Karimbappe/KarimFraboulet_3_17072021" 
 }
