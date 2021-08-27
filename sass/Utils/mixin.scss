@@ -1,8 +1,11 @@
 
 @mixin shadowbox {
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-  }
+    box-shadow: 0 8px 10px rgb(180, 180, 180);
+} /* box shadow header */
 
+@mixin shadowboxgeneral {
+    box-shadow: 3px 3px 10px #dedada ;
+}
 
 @mixin mobile {
     @media screen and (max-width: $mobile) {
