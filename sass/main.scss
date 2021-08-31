@@ -1,11 +1,23 @@
 @import './Utils/mixin.scss';
 @import './Utils/variables';
+@import './Components/buttons.scss';
+@import './Layout/footer.scss';
+@import './Layout/function.scss';
+@import './Layout/header.scss';
+@import './Pages/home.scss';
+@import './Pages/menue.scss';
+
 
 
 body {
     font-family: $text-font;
     margin: 0;
     background-color: $color-background;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER */
@@ -122,20 +134,18 @@ body {
     .desktop{
         display: flex;
         justify-content: center;
+        margin-bottom: 50px;
     }
-    .firsttwo{
-        display: inline-block;   
-    }.threefour{
-            display: inline-block;
-        }
     .function-box{
         display: flex;
         justify-content: space-evenly;
         .function-step{
             height: 70px;
-            width: 200px;
-        }    
-    }
+            width: 200px;}}
+        .firsttwo{
+        display: inline-block;}
+        .threefour{
+        display: inline-block;}
 }
 
 
@@ -210,6 +220,7 @@ p{
 }
 
 footer{
+    margin-top: auto;
     background-color: #353535;
     display: flex;
     flex-direction: column;

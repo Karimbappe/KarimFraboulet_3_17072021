@@ -1,0 +1,31 @@
+/* HEADER */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-logo {
+ @include displayflexcenter;
+ width: 100%;
+ padding: 1rem 0 0 0;
+ @include shadowbox;
+ img {
+    width: 12rem;
+    height: 3rem;
+ }
+}
+
+.logo-loc{
+    margin: 5px;
+}
+
+.localisation {
+    box-shadow: 0px 3px 3px #73737338 inset;
+    @include displayflexcenter;
+    height: 50px;
+    width: 100%;
+    background-color: $color-background-2;
+}

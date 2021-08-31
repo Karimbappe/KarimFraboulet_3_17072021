@@ -1,2 +1,110 @@
+.return{
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}
 
+.headerlogo{
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
 
+.function-box{
+    margin: 0 20px;
+}
+
+.pagemenu__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;  
+}
+
+.pagemenu__title{
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2.4rem 0 0 1.5rem;
+    margin-top: -2rem;
+    background-color: #f6f6f6;
+}
+
+h1{
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    margin: 0;
+    font-family: $logo-title-font;
+}
+
+.restaurant__heart{
+    position: absolute;
+    cursor: pointer;
+    top: 2.5rem;
+    right: 8%;
+    font-size: 1.5rem;
+}
+
+.pagemenu {
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    background-color: #f6f6f6;
+}
+
+.menu {
+    grid-column-start: 2;
+}
+.menu__title {
+    padding: 3rem 0 .5rem;
+    font-size: 1rem;
+}
+.menu__title--underline{
+    width: 2.5rem;
+    border-top: 3px solid $color-tertiary;
+    margin: .5rem 0 0 0
+}
+
+.menu__desc {
+    position: relative;
+    background-color: #fff;
+    height: 70px;
+    padding: 0 0 15px 0;
+    margin: 1rem 0 12px 0;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    border-radius: 1.5rem;
+    @include shadowboxgeneral;
+    grid-column-start: 2;
+    .menu__desc--title{
+        width: 100%;
+        padding: 0 0 0 12px;}
+        .menu__desc--subtitle{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1.5rem 0 12px;}
+            .txt {
+                overflow: hidden;
+                text-overflow: ellipsis;}
+                .price{
+                    font-size: 14px;
+                    font-weight: $fontWeight;
+                    padding-right: .5rem;}
+}
+
+.btn__menu--block{
+    grid-column-start: 2;
+    text-align: center;
+    margin: 2.5rem 0 4.3rem 0;
+    cursor: pointer;
+    .btn__menu{
+        width: 190px;
+        grid-column-start: 2;
+        border-radius: 2rem;
+        border: 0;
+        @include shadowboxgeneral;
+        font-size: 1rem;
+        color: #fff;
+        padding: 1rem;
+        background-image: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
+        cursor: pointer;
+    }
+}

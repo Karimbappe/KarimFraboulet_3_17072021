@@ -1,0 +1,37 @@
+/* FOOTER */
+
+footer{
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1.5rem;
+    font-size: 12px;
+    .footerlogo{
+        filter: invert(100%);
+        width: 105px;
+        height: 15px;
+        padding: 2rem 0 1.5rem 0;
+        margin: 0 0 0 -10px;}
+        .footer__link{
+            margin: 0 0 10px 0}
+            .whiteicon{
+                color: #fff;
+            }
+}
+
+h4{
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 0 0 12px 0;
+}
