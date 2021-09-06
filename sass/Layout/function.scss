@@ -44,9 +44,13 @@
     .function{
         height: 230px;
     }
+    .restaurant__card{
+        width: 350px;
+    }
     .desktop{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
     }
     .firsttwo{
         display: inline-block;   

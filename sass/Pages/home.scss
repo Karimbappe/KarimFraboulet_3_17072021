@@ -1,8 +1,94 @@
 body {
     font-family: $text-font;
     margin: 0;
+    padding: 0;
     background-color: $color-background;
 }
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    display: flex;
+}
+
+.obj{
+    width: 6px;
+    height: 40px;
+    background: white;
+    margin: 0 3px;
+    border-radius: 10px;
+    animation: loading 0.8s infinite;
+}
+
+.obj:nth-child(1){
+    animation-delay: 0.1s;
+    color: rgba($color: $color-primary, $alpha: 0.2);
+}
+.obj:nth-child(2){
+    animation-delay: 0.2s;
+    color: rgba($color: $color-primary, $alpha: 0.2);
+}
+.obj:nth-child(3){
+    animation-delay: 0.3s;
+    color: rgba($color: $color-primary, $alpha: 0.2);
+}
+.obj:nth-child(4){
+    animation-delay: 0.4s;
+    color: rgba($color: $color-secondary, $alpha: 0.2);
+}
+.obj:nth-child(5){
+    animation-delay: 0.5s;
+    color: rgba($color: $color-secondary, $alpha: 0.2);
+}
+.obj:nth-child(6){
+    animation-delay: 0.6s;
+    color: rgba($color: $color-secondary, $alpha: 0.2);
+}
+.obj:nth-child(7){
+    animation-delay: 0.7s;
+    color: rgba($color: $color-tertiary, $alpha: 0.2);
+}
+.obj:nth-child(8){
+    animation-delay: 0.8s;
+    color: rgba($color: $color-tertiary, $alpha: 0.2);
+}
+.obj:nth-child(9){
+    animation-delay: 0.9s;
+    color: rgba($color: $color-tertiary, $alpha: 0.2);
+}
+.fade-in {
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+  }
+
+@keyframes loading {
+    0%{
+        height: 0;
+    }
+    50%{
+        height: 40px;
+    }
+    100%{
+        height: 0;
+    }
+}
+@keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 /* HEADER */
 
@@ -106,6 +192,7 @@ body {
                                 margin-right: 20px;
                                 color: gray;}
                                 .function-step:hover{
+                                    cursor: pointer;
                                     background-color: rgba($color: $color-primary, $alpha: 0.2);
                                     .function__step--icon{
                                         color: $color-primary;}}
@@ -179,9 +266,8 @@ p{
             border-radius: 1.5rem 1.5rem 0 0;
             width: 100%;
             height: 175px;
-            object-fit: cover;
-            object-fit: cover;}
-            .restaurant__card--tag{
+            object-fit: cover; }
+            .restaurant__card--tag {
                 border-radius: 3px;
                 background-color: $color-tertiary;
                 color: $color-dark-green;
@@ -194,15 +280,23 @@ p{
                     background-color: #fff;
                     border-radius: 0 0 1.5rem 1.5rem;
                     padding-left: 1rem;
-                    height: 75px;}
-                    .restaurant__card--heart{
+                    height: 75px; }
+                    .restaurant__card--heart {
                         position: absolute;
                         transform-origin: bottom;
                         opacity: 1;
                         font-size: 24px;
                         right: 1.5rem;
                         bottom: 1.5rem;
-                        cursor: pointer;}
+                        cursor: pointer; }
+                        .restaurant__heart--animation {
+                            position: absolute;
+                            right: 1.5rem;
+                            bottom: 1.5rem;
+                            opacity: 0;
+                            transform-origin: bottom;
+                            font-size: 25px;
+                            cursor: pointer; }
 }
 
 footer{
@@ -238,5 +332,4 @@ ul{
 }
 
 li{
-    padding: 0 0 12px 0;
-}
+    padding: 0 0 12px 0;}
