@@ -1,0 +1,108 @@
+@import '/sass/Layout/keyframes.scss';
+@import '../Utils/variables';
+
+/* LOADING SCREEN */
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: rgba($color: $color-primary, $alpha: 1);
+    visibility: hidden;
+    animation: 3s linear 0s loader;
+}
+
+.loading--logo{
+    background: white;
+}
+
+.loadingWave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.obj{
+    width: 6px;
+    height: 40px;
+    background: white;
+    margin: 0 3px;
+    border-radius: 10px;
+    animation: loading 0.8s infinite;
+}
+
+.obj:nth-child(1){
+    animation-delay: 0.1s;
+}
+.obj:nth-child(2){
+    animation-delay: 0.2s;
+}
+.obj:nth-child(3){
+    animation-delay: 0.3s;
+}
+.obj:nth-child(4){
+    animation-delay: 0.4s;
+}
+.obj:nth-child(5){
+    animation-delay: 0.5s;
+}
+.obj:nth-child(6){
+    animation-delay: 0.6s;
+}
+.obj:nth-child(7){
+    animation-delay: 0.7s;
+}
+.obj:nth-child(8){
+    animation-delay: 0.8s;
+}
+.obj:nth-child(9){
+    animation-delay: 0.9s;
+}
+
+// MENUE
+
+.fade-in {
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  }
+
+
+//   HEART
+
+.restaurant__menue--animation{
+    position: absolute;
+    cursor: pointer;
+    top: 2.5rem;
+    right: 8%;
+    opacity: 0;
+    font-size: 1.5rem;
+    color: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+}
+
+.restaurant__menue--animation:hover{
+    opacity: 1;
+}
+
+.restaurant__heart--animation{
+    position: absolute;
+    transition: opacity 1s;
+    font-size: 24px;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    opacity: 0;
+    transform-origin: bottom;
+    color: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+}
+.restaurant__heart--animation:hover {
+    opacity: 1;
+}

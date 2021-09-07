@@ -1,3 +1,10 @@
+@import url(/sass/Components/buttons.scss);
+@import url(/sass/Layout/header.scss);
+@import url(/sass/Layout/footer.scss);
+@import url(/sass/Layout/animation.scss);
+@import url(/sass/Layout/keyframes.scss);
+
+
 .return{
     position: absolute;
     top: 1.5rem;
@@ -40,6 +47,20 @@ h1{
     top: 2.5rem;
     right: 8%;
     font-size: 1.5rem;
+}
+
+.restaurant__menue--animation{
+    position: absolute;
+    cursor: pointer;
+    top: 2.5rem;
+    right: 8%;
+    opacity: 0;
+    font-size: 1.5rem;
+    color: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+}
+
+.restaurant__menue--animation:hover{
+    opacity: 1;
 }
 
 .pagemenu {
@@ -88,23 +109,4 @@ h1{
                     font-size: 14px;
                     font-weight: $fontWeight;
                     padding-right: .5rem;}
-}
-
-.btn__menu--block{
-    grid-column-start: 2;
-    text-align: center;
-    margin: 2.5rem 0 4.3rem 0;
-    cursor: pointer;
-    .btn__menu{
-        width: 190px;
-        grid-column-start: 2;
-        border-radius: 2rem;
-        border: 0;
-        @include shadowboxgeneral;
-        font-size: 1rem;
-        color: #fff;
-        padding: 1rem;
-        background-image: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
-        cursor: pointer;
-    }
 }

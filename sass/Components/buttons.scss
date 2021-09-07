@@ -1,3 +1,6 @@
+@import url(/sass/Utils/_variables.scss);
+@import url(/sass/Utils/mixin.scss);
+
 /* BOUTON */
 
 .container-button-box {
@@ -31,4 +34,23 @@
     background: linear-gradient(175deg, $color-secondary 10%, $color-primary 95%);
     @include shadowboxgeneral;
     transition: box-shadow 150ms linear, transform 150ms linear;
+}
+
+.btn__menu--block{
+    grid-column-start: 2;
+    text-align: center;
+    margin: 2.5rem 0 4.3rem 0;
+    cursor: pointer;
+    .btn__menu{
+        width: 190px;
+        grid-column-start: 2;
+        border-radius: 2rem;
+        border: 0;
+        @include shadowboxgeneral;
+        font-size: 1rem;
+        color: #fff;
+        padding: 1rem;
+        background-image: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
+        cursor: pointer;
+    }
 }

@@ -1,226 +1,21 @@
+@import url(/sass/Components/buttons.scss);
+@import url(/sass/Layout/header.scss);
+@import url(/sass/Layout/footer.scss);
+@import url(/sass/Layout/animation.scss);
+@import url(/sass/Layout/keyframes.scss);
+@import url(/sass/Layout/function.scss);
+
+
+
 body {
+    position: relative;
     font-family: $text-font;
     margin: 0;
     padding: 0;
     background-color: $color-background;
-}
-
-.loading{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 40px;
-    display: flex;
-}
-
-.obj{
-    width: 6px;
-    height: 40px;
-    background: white;
-    margin: 0 3px;
-    border-radius: 10px;
-    animation: loading 0.8s infinite;
-}
-
-.obj:nth-child(1){
-    animation-delay: 0.1s;
-    color: rgba($color: $color-primary, $alpha: 0.2);
-}
-.obj:nth-child(2){
-    animation-delay: 0.2s;
-    color: rgba($color: $color-primary, $alpha: 0.2);
-}
-.obj:nth-child(3){
-    animation-delay: 0.3s;
-    color: rgba($color: $color-primary, $alpha: 0.2);
-}
-.obj:nth-child(4){
-    animation-delay: 0.4s;
-    color: rgba($color: $color-secondary, $alpha: 0.2);
-}
-.obj:nth-child(5){
-    animation-delay: 0.5s;
-    color: rgba($color: $color-secondary, $alpha: 0.2);
-}
-.obj:nth-child(6){
-    animation-delay: 0.6s;
-    color: rgba($color: $color-secondary, $alpha: 0.2);
-}
-.obj:nth-child(7){
-    animation-delay: 0.7s;
-    color: rgba($color: $color-tertiary, $alpha: 0.2);
-}
-.obj:nth-child(8){
-    animation-delay: 0.8s;
-    color: rgba($color: $color-tertiary, $alpha: 0.2);
-}
-.obj:nth-child(9){
-    animation-delay: 0.9s;
-    color: rgba($color: $color-tertiary, $alpha: 0.2);
-}
-.fade-in {
-            animation-name: fadeInOpacity;
-            animation-iteration-count: 1;
-            animation-timing-function: ease-in;
-            animation-duration: 2s;
-  }
-
-@keyframes loading {
-    0%{
-        height: 0;
-    }
-    50%{
-        height: 40px;
-    }
-    100%{
-        height: 0;
-    }
-}
-@keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-
-/* HEADER */
-
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-}
-
-.container-logo {
- @include displayflexcenter;
- width: 100%;
- padding: 1rem 0 0 0;
- @include shadowbox;
- img {
-    width: 12rem;
-    height: 3rem;
- }
-}
-
-.logo-loc{
-    margin: 5px;
-}
-
-.localisation {
-    box-shadow: 0px 3px 3px #73737338 inset;
-    @include displayflexcenter;
-    height: 50px;
+    height: 100%;
     width: 100%;
-    background-color: $color-background-2;
 }
-
-.container-button-box {
-    @include aligncenter;
-    width: 100%;
-    margin: 0 auto;
-    padding: 40px 0px 40px 0px;
-
-}
-
-.titre-button {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1.5rem ​10px 1.5rem 10px;
-}
-
-.sous-titre-button {
-    font-size: 1.125rem;
-    font-weight: 300;
-}
-
-.button1{
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-    margin-top: 30px;
-    width: 220px;
-    height: 50px;
-    color: white;
-    border-radius: 30px;
-    background: linear-gradient(175deg, $color-secondary 10%, $color-primary 95%);
-    @include shadowboxgeneral;
-    transition: box-shadow 150ms linear, transform 150ms linear;
-}
-
-/* FONCTIONEMENT */
-
-.function{
-    height: 300px;
-    background-color: white;
-        .function-title {
-            padding: 20px;
-            font-size: large;
-            font-weight: bolder;}
-            .function-container {
-                justify-content: center;
-                display: flex;
-                margin-bottom: 25px;
-                padding: 25px 0 25px 0;}
-                .function-step{
-                        margin-bottom: 25px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        border-radius: 20px;
-                        @include shadowboxgeneral;
-                        border: none;
-                        background-color: #f6f6f6;}
-                        .function__step--number{
-                            margin: 0px 20px 0 0;
-                            color: #fff;
-                            background-color: $color-primary;
-                            border: 1px solid $color-primary;
-                            border-radius: 50%;
-                            padding: 4px 8px 4px 8px;
-                            margin: 0 1.5rem 0 -12px;}      
-                            .function__step--icon{
-                                margin-right: 20px;
-                                color: gray;}
-                                .function-step:hover{
-                                    cursor: pointer;
-                                    background-color: rgba($color: $color-primary, $alpha: 0.2);
-                                    .function__step--icon{
-                                        color: $color-primary;}}
-}
-
-@media (min-width: 768px) {
-    .function{
-        height: 230px;
-    }
-    .desktop{
-        display: flex;
-        justify-content: center;
-    }
-    .firsttwo{
-        display: inline-block;   
-    }.threefour{
-            display: inline-block;
-        }
-    .function-box{
-        display: flex;
-        justify-content: space-evenly;
-        .function-step{
-            height: 70px;
-            width: 200px;
-        }    
-    }
-}
-
 
 /* MENUE */
 
@@ -262,74 +57,37 @@ p{
     @include shadowboxgeneral;
     cursor: pointer;
     margin: 20px;
-        .restaurant__card--img {
-            border-radius: 1.5rem 1.5rem 0 0;
-            width: 100%;
-            height: 175px;
-            object-fit: cover; }
-            .restaurant__card--tag {
-                border-radius: 3px;
-                background-color: $color-tertiary;
-                color: $color-dark-green;
-                padding: 5px;
-                position: absolute;
-                top: 12px;
-                right: 10px; }
-                .restaurant__card--text {
-                    position: relative;
-                    background-color: #fff;
-                    border-radius: 0 0 1.5rem 1.5rem;
-                    padding-left: 1rem;
-                    height: 75px; }
-                    .restaurant__card--heart {
-                        position: absolute;
-                        transform-origin: bottom;
-                        opacity: 1;
-                        font-size: 24px;
-                        right: 1.5rem;
-                        bottom: 1.5rem;
-                        cursor: pointer; }
-                        .restaurant__heart--animation {
-                            position: absolute;
-                            right: 1.5rem;
-                            bottom: 1.5rem;
-                            opacity: 0;
-                            transform-origin: bottom;
-                            font-size: 25px;
-                            cursor: pointer; }
+    .restaurant__card--img {
+        border-radius: 1.5rem 1.5rem 0 0;
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        object-fit: cover;
+    }
+    .restaurant__card--tag{
+        border-radius: 3px;
+        background-color: $color-tertiary;
+        color: $color-dark-green;
+        padding: 5px;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+    }
+    .restaurant__card--text {
+        position: relative;
+        background-color: #fff;
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding-left: 1rem;
+        height: 75px;
+        .restaurant__card--heart{
+            position: absolute;
+            transform-origin: bottom;
+            opacity: 1;
+            font-size: 24px;
+            right: 1.5rem;
+            bottom: 1.5rem;
+            cursor: pointer;
+            transition: color 1s, background-color 1s;
+        }
+    }
 }
-
-footer{
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 0 1.5rem;
-    font-size: 12px;
-    .footerlogo{
-        filter: invert(100%);
-        width: 105px;
-        height: 15px;
-        padding: 2rem 0 1.5rem 0;
-        margin: 0 0 0 -10px;}
-        .footer__link{
-            margin: 0 0 10px 0}
-            .whiteicon{
-                color: #fff;
-            }
-}
-
-h4{
-    color: #fff;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    padding: 0 0 12px 0;}

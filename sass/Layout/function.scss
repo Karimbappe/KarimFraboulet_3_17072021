@@ -1,18 +1,24 @@
+@import url(/sass/Utils/mixin.scss);
+@import url(/sass/Utils/_variables.scss);
+
 /* FONCTIONEMENT */
 
 .function{
     height: 300px;
     background-color: white;
         .function-title {
+            cursor: pointer;
             padding: 20px;
             font-size: large;
             font-weight: bolder;}
             .function-container {
+                cursor: pointer;
                 justify-content: center;
                 display: flex;
                 margin-bottom: 25px;
                 padding: 25px 0 25px 0;}
                 .function-step{
+                        cursor: pointer;
                         margin-bottom: 25px;
                         padding-top: 10px;
                         padding-bottom: 10px;
@@ -32,9 +38,11 @@
                             padding: 4px 8px 4px 8px;
                             margin: 0 1.5rem 0 -12px;}      
                             .function__step--icon{
+                                cursor: pointer;
                                 margin-right: 20px;
                                 color: gray;}
                                 .function-step:hover{
+                                    cursor: pointer;
                                     background-color: rgba($color: $color-primary, $alpha: 0.2);
                                     .function__step--icon{
                                         color: $color-primary;}}
