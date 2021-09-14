@@ -1,7 +1,10 @@
-@import '/sass/Layout/keyframes.scss';
-@import '../Utils/variables';
+@import './keyframes.scss';
+@import '../Utils/_variables.scss';
+@import '../Utils/mixin.scss';
 
 /* LOADING SCREEN */
+
+// Position et forme de la Loading Page
 
 .loading {
     position: fixed;
@@ -11,19 +14,25 @@
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background-color: rgba($color: $color-primary, $alpha: 1);
+    background-color: rgba($color: $color-secondary, $alpha: 1);
     visibility: hidden;
     animation: 3s linear 0s loader;
 }
 
+// Logo Oh My Food
+
 .loading--logo{
-    background: white;
+    display: flex;
 }
 
+// Position de la vague
+
 .loadingWave {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,31 +76,51 @@
     animation-delay: 0.9s;
 }
 
-// MENUE
+// Animation qui fait glisser les plats au chargement de la page 
 
-.fade-in {
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
+  .fadeDown {
+    animation-name: fadeDown;
+  }
+
+  .one {
+    animation-delay: 1.3s;
+  }
+  .two{
+      animation-delay: 1.5s;
+  }
+  .three{
+      animation-delay: 1.7s;
+  }
+  .four{
+      animation-delay: 1.9s;
+  }
+  .animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
   }
 
 
 //   HEART
 
-.restaurant__menue--animation{
+// Position de l'animation HEART sur les menues
+
+.restaurant__menue--animation {
     position: absolute;
     cursor: pointer;
     top: 2.5rem;
     right: 8%;
     opacity: 0;
     font-size: 1.5rem;
-    color: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    color: rgba($color: $color-primary, $alpha: 1);
 }
 
-.restaurant__menue--animation:hover{
+// Activation de l'animation HEART des menues
+
+.restaurant__menue--animation:hover {
     opacity: 1;
 }
+
+// Postition de l'animation Home page
 
 .restaurant__heart--animation{
     position: absolute;
@@ -101,8 +130,47 @@
     bottom: 1.5rem;
     opacity: 0;
     transform-origin: bottom;
-    color: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    color: rgba($color: $color-primary, $alpha: 1);
 }
+
+// Activation de l'animation HEART de la Home page
+
 .restaurant__heart--animation:hover {
     opacity: 1;
 }
+
+// Validation icon et background vert des plats
+
+.menu__desc:hover  {
+    .menu__desc--animation{
+        visibility: visible;
+        transition: all .5s ease-in;
+        transform: translateX(-100%);}
+        .menu__desc--circle{ // Rotation du logo
+            transform: rotate(-360deg);
+            transition-duration: 0.5s;}
+            .price {
+                transition: all .5s; // Marge du prix
+                margin-right: 170px;
+            }
+}
+// Position et forme de l'animation avant l'activation
+
+.menu__desc--animation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    top: 0;
+    left: 100%;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #fff;
+    font-size: 20px;
+    transform-origin: right;
+    visibility: hidden;
+}
+
+

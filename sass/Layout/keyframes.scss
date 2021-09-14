@@ -9,17 +9,6 @@
         height: 0;
     }
 }
-@keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   @keyframes loader { 
     0% { 
         visibility: visible; 
@@ -30,4 +19,22 @@
     100% { 
         visibility: hidden; 
     }  
+}
+@keyframes fadeDown {
+    from{
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes slidehover {
+    from{
+        left: 100%;
+    }
+    to{
+        left: 80%;
+    }
 }

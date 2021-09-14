@@ -1,12 +1,12 @@
-@import url(/sass/Components/buttons.scss);
-@import url(/sass/Layout/header.scss);
-@import url(/sass/Layout/footer.scss);
-@import url(/sass/Layout/animation.scss);
-@import url(/sass/Layout/keyframes.scss);
+@import '../Components/buttons.scss';
+@import '../Layout/header.scss';
+@import '../Layout/footer.scss';
+@import '../Layout/animation.scss';
+@import '../Layout/keyframes.scss';
 
 
 .return{
-    position: absolute;
+    position: absolute; 
     top: 1.5rem;
     left: 1rem;
 }
@@ -48,6 +48,7 @@ h1{
     right: 8%;
     font-size: 1.5rem;
 }
+
 
 .restaurant__menue--animation{
     position: absolute;

@@ -1,12 +1,12 @@
-@import url(/sass/Components/buttons.scss);
-@import url(/sass/Layout/header.scss);
-@import url(/sass/Layout/footer.scss);
-@import url(/sass/Layout/animation.scss);
-@import url(/sass/Layout/keyframes.scss);
-@import url(/sass/Layout/function.scss);
+@import '../Components/buttons.scss';
+@import '../Layout/header.scss';
+@import '../Layout/footer.scss';
+@import '../Layout/animation.scss';
+@import '../Layout/keyframes.scss';
+@import '../Layout/function.scss';
 
 
-
+   
 body {
     position: relative;
     font-family: $text-font;

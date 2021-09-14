@@ -1,7 +1,8 @@
-@import url(/sass/Utils/mixin.scss);
-@import url(/sass/Utils/_variables.scss);
+@import '../Utils/mixin.scss';
+@import '../Utils/_variables.scss';
 
 /* FONCTIONEMENT */
+
 
 .function{
     height: 300px;
@@ -45,7 +46,8 @@
                                     cursor: pointer;
                                     background-color: rgba($color: $color-primary, $alpha: 0.2);
                                     .function__step--icon{
-                                        color: $color-primary;}}
+                                        color: $color-primary;}
+                                    }
 }
 
 @media (min-width: 768px) {
