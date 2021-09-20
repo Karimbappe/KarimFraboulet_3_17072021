@@ -148,12 +148,28 @@
         transform: translateX(-100%);}
         .menu__desc--circle{ // Rotation du logo
             transform: rotate(-360deg);
-            transition-duration: 0.5s;}
+            transition-duration: 0.8s;}
             .price {
                 transition: all .5s; // Marge du prix
                 margin-right: 170px;
             }
 }
+@media (max-width: 425px) {
+    .menu__desc:hover  {
+        .price {
+            margin-right: 50px;
+        }
+}
+}
+
+@media (min-width: 1199px) {
+    .menu__desc:hover  {
+        .price {
+            margin-right: 250px;
+        }
+}
+}
+
 // Position et forme de l'animation avant l'activation
 
 .menu__desc--animation {
