@@ -7,5 +7,9 @@
     "repository":{
         "url": "https://github.com/Karimbappe/KarimFraboulet_3_17072021" 
     },
+    "scripts": {
+        "test":"echo hello",
+        "sass": "sass sass/main.scss public/main.css"
+    },
     "dependencies": {}
 }
