@@ -36,6 +36,11 @@
     transition: box-shadow 150ms linear, transform 150ms linear;
 }
 
+.button1:hover{
+    background: linear-gradient(175deg, #e9add8 10%, #b79bda 95%);
+    box-shadow: 3px 3px 10px #dedada9d ;
+}
+
 .btn__menu--block{
     grid-column-start: 2;
     text-align: center;
