@@ -37,8 +37,8 @@
 }
 
 .button1:hover{
-    background: linear-gradient(175deg, #e9add8 10%, #b79bda 95%);
-    box-shadow: 3px 3px 10px #dedada9d ;
+    background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+    box-shadow: 3px 3px 10px #646363 ;
 }
 
 .btn__menu--block{
@@ -57,5 +57,9 @@
         padding: 1rem;
         background-image: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
         cursor: pointer;
-    }
+    
 }
+}
+.btn__menu:hover{
+        background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+        box-shadow: 3px 3px 10px #646363 ;}

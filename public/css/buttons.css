@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Coleurs de base du site */
+/* Charte d'écriture */
+/* Font type */
+/* box shadow header */
+/* BOUTON */
+.container-button-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0px 40px 0px;
+}
+
+.titre-button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem ​10px 1.5rem 10px;
+}
+
+.sous-titre-button {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.button1 {
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 220px;
+  height: 50px;
+  color: white;
+  border-radius: 30px;
+  background: linear-gradient(175deg, #ff79da 10%, #9256dc 95%);
+  -webkit-box-shadow: 3px 3px 10px #dedada;
+          box-shadow: 3px 3px 10px #dedada;
+  -webkit-transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
+  transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
+  transition: box-shadow 150ms linear, transform 150ms linear;
+  transition: box-shadow 150ms linear, transform 150ms linear, -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
+}
+
+.button1:hover {
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
+}
+
+.btn__menu--block {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  text-align: center;
+  margin: 2.5rem 0 4.3rem 0;
+  cursor: pointer;
+}
+
+.btn__menu--block .btn__menu {
+  width: 190px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  border-radius: 2rem;
+  border: 0;
+  -webkit-box-shadow: 3px 3px 10px #dedada;
+          box-shadow: 3px 3px 10px #dedada;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem;
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9256dc 100%);
+  cursor: pointer;
+}
+
+.btn__menu:hover {
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
+}
+/*# sourceMappingURL=buttons.css.map */

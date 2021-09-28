@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* box shadow header */
+/* Coleurs de base du site */
+/* Charte d'écriture */
+/* Font type */
+/* FONCTIONEMENT */
+.function {
+  height: 300px;
+  background-color: white;
+}
+
+.function .function-title {
+  cursor: pointer;
+  padding: 20px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.function .function-container  {
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+  padding: 25px 0 25px 0;
+}
+
+.function .function-step {
+  cursor: pointer;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 10px #dedada;
+          box-shadow: 3px 3px 10px #dedada;
+  border: none;
+  background-color: #f6f6f6;
+}
+
+.function .function__step--number {
+  margin: 0px 20px 0 0;
+  color: #fff;
+  background-color: #9256dc;
+  border: 1px solid #9256dc;
+  border-radius: 50%;
+  padding: 4px 8px 4px 8px;
+  margin: 0 1.5rem 0 -12px;
+}
+
+.function .function__step--icon {
+  cursor: pointer;
+  margin-right: 20px;
+  color: gray;
+}
+
+.function .function-step:hover {
+  cursor: pointer;
+  background-color: rgba(146, 86, 220, 0.2);
+}
+
+.function .function-step:hover .function__step--icon {
+  color: #9256dc;
+}
+
+@media (min-width: 895px) {
+  .function {
+    height: 230px;
+  }
+  .restaurant__card {
+    width: 350px;
+  }
+  .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+  .firsttwo {
+    display: inline-block;
+  }
+  .threefour {
+    display: inline-block;
+  }
+  .function-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .function-box .function-step {
+    height: 70px;
+    width: 270px;
+  }
+}
+/*# sourceMappingURL=function.css.map */

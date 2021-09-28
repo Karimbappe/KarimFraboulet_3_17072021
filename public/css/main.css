@@ -51,9 +51,9 @@
 }
 
 .button1:hover {
-  background: linear-gradient(175deg, #e9add8 10%, #b79bda 95%);
-  -webkit-box-shadow: 3px 3px 10px #dedada9d;
-          box-shadow: 3px 3px 10px #dedada9d;
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
 }
 
 .btn__menu--block {
@@ -77,6 +77,12 @@
   padding: 1rem;
   background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9256dc 100%);
   cursor: pointer;
+}
+
+.btn__menu:hover {
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
 }
 
 /* FOOTER */
@@ -348,9 +354,9 @@ li {
 }
 
 .button1:hover {
-  background: linear-gradient(175deg, #e9add8 10%, #b79bda 95%);
-  -webkit-box-shadow: 3px 3px 10px #dedada9d;
-          box-shadow: 3px 3px 10px #dedada9d;
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
 }
 
 .btn__menu--block {
@@ -374,6 +380,12 @@ li {
   padding: 1rem;
   background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9256dc 100%);
   cursor: pointer;
+}
+
+.btn__menu:hover {
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
 }
 
 /* box shadow header */
@@ -1098,9 +1110,9 @@ p {
 }
 
 .button1:hover {
-  background: linear-gradient(175deg, #e9add8 10%, #b79bda 95%);
-  -webkit-box-shadow: 3px 3px 10px #dedada9d;
-          box-shadow: 3px 3px 10px #dedada9d;
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
 }
 
 .btn__menu--block {
@@ -1124,6 +1136,12 @@ p {
   padding: 1rem;
   background-image: radial-gradient(ellipse farthest-corner at 20px 0, #ff79da 0%, #9256dc 100%);
   cursor: pointer;
+}
+
+.btn__menu:hover {
+  background: linear-gradient(175deg, #f3a0db 10%, #9f79cc 95%);
+  -webkit-box-shadow: 3px 3px 10px #646363;
+          box-shadow: 3px 3px 10px #646363;
 }
 
 /* box shadow header */

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* box shadow header */
+/* Coleurs de base du site */
+/* Charte d'écriture */
+/* Font type */
+/* HEADER */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem 0 0 0;
+  -webkit-box-shadow: 0 8px 10px #b4b4b4;
+          box-shadow: 0 8px 10px #b4b4b4;
+}
+
+.container-logo img {
+  width: 12rem;
+  height: 3rem;
+}
+
+.logo-loc {
+  margin: 5px;
+}
+
+.localisation {
+  -webkit-box-shadow: 0px 3px 3px #73737338 inset;
+          box-shadow: 0px 3px 3px #73737338 inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+/*# sourceMappingURL=header.css.map */
