@@ -5,6 +5,8 @@ https://karimbappe.github.io/KarimFraboulet_3_17072021/index.html
 OhMyFood est une entreprise de commande de repas en ligne qui vous permet de composer votre propre menu en ligne et de réduire votre temps d'attente dans les restaurants. Plus besoin de perdre du temps à consulter la carte, commandez en ligne et récupérez votre commande en un rien de temps.
 Ceci est l'intégration d'une maquette les fonctionnalités ne sont pas toutes en état de marche.
 
+stack : HTML, CSS, SASS
+
 
 Fonctionnalités
 
